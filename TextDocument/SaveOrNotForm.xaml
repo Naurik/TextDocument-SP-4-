@@ -1,0 +1,21 @@
+﻿<Window x:Class="TextDocument.SaveOrNotForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextDocument"
+        mc:Ignorable="d"
+        Title="Save" Height="150" Width="400">
+    <Grid>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top" Width="96" Click="ClickSave"/>
+        <Button Content="Не сохранять" HorizontalAlignment="Left" Margin="146,89,0,0" VerticalAlignment="Top" Width="96" Click="ClickNotSave"/>
+        <Button Content="Отмена" HorizontalAlignment="Left" Margin="286,89,0,0" VerticalAlignment="Top" Width="96" Click="ClickBack"/>
+        <RichTextBox HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" Width="382" Margin="0,10,0,0">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Вы хотите сохранить изменения в файле 'Новый текстовый документ.txt'?"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
